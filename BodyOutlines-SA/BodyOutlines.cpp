@@ -6,7 +6,6 @@ using namespace plugin;
 RwTexture* gpOutline1Tex;
 RwTexture* gpOutline2Tex;
 RwTexture* gpOutline3Tex;
-ThiscallEvent <plugin::AddressList<0x53E981, plugin::H_CALL>, plugin::PRIORITY_AFTER, plugin::ArgPickN<CPed*, 0>, void(CPed*)> onProcessControl;
 
 static RwTexture* RwTextureRead(const char* name, const char* mask) {
     return plugin::CallAndReturn<RwTexture*, 0x07F3AC0>(name, mask);
